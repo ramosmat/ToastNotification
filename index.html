@@ -9,17 +9,20 @@
 </head>
 <body class="flex items-center justify-center w-screen h-screen overflow-hidden bg-gray-800">
     <section class="absolute top-0 right-0 p-4">
-        <dialog open id="caixa_de_notificacao"
-        class="relative flex items-center gap-4 p-4 text-gray-200 bg-gray-900 shadow-lg rounded-2xl">
+        <dialog 
+        open id="caixa_de_notificacao"
+        class="relative flex items-center gap-4 p-4 mb-3 text-gray-200 bg-gray-900 shadow-lg w-80 rounded-2xl">
             <section class="flex items-center gap-4">
-                <img 
-                src="https://i.pravatar.cc/56" 
-                alt="Avatar do pravatar" 
-                class="rounded-full">
+                <div class="bg-gray-900 rounded-full w-14">
+                    <img 
+                    src="https://i.pravatar.cc/56" 
+                    alt="Avatar do pravatar" 
+                    class="rounded-full">
+                </div>
                 
-                <div>
-                    <h3 class="font-semibold">Matheus Ramos</h3>
-                    <p class="text-sm">Greetings, one and all!</p>    
+                <div class="w-32">
+                    <h3 class="overflow-hidden font-semibold text-ellipsis line-clamp-1">Matheus Ramos</h3>
+                    <p class="overflow-hidden text-sm line-clamp-1 text-ellipsis">Greetings, one and all!</p>    
                 </div>
             </section>
 
@@ -31,7 +34,6 @@
                 </button>
             </form>
         </dialog>
-        
     </section>
       
     <button class="rounded-[34px] px-[15px] py-[10px] bg-green-300
