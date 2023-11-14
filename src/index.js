@@ -4,6 +4,7 @@ window.onload = () =>{
     const notificationTemplate = document.querySelector('#notification');
     const notificationSection = document.querySelector('#notifications-section');
     const notificationButton = document.querySelector('button');
+    const notificationSound = new Audio('/sounds/notification.wav')
 
     //Criando variável que será o id da notificação quando clicado no botão "Mostrar Notificação"
     const notificationId = 'notification-${Date.now()}';
@@ -28,11 +29,12 @@ window.onload = () =>{
 
         //Inserindo no section o que está no newNotification, que é o que está na tag dialog
         notificationSection.appendChild(newNotification);
+        notificationSound.play()
 
-        // //Setando timout para remover a notificação que aparecer após 5 segundos
-        //     setTimeout(() => {
-        //         document.getElementById(notificationId).close();
-        //     }, 5000);
+        //Setando timout para remover a notificação que aparecer após 5 segundos
+            setTimeout(() => {
+                document.getElementById(notificationId).close();
+            }, 5000);
     });
 };
 
