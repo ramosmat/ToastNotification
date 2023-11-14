@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: DM Sans, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -683,20 +683,12 @@ video {
   clear: none;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
+.mt-0 {
+  margin-top: 0px;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
-}
-
-.mt-0 {
-  margin-top: 0px;
 }
 
 .box-border {
@@ -813,18 +805,6 @@ video {
   height: 100vh;
 }
 
-.max-h-20 {
-  max-height: 5rem;
-}
-
-.max-h-44 {
-  max-height: 11rem;
-}
-
-.max-h-4 {
-  max-height: 1rem;
-}
-
 .max-h-0 {
   max-height: 0px;
 }
@@ -912,6 +892,22 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+@keyframes notification-enter {
+  0% {
+    transform: translateX(18rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0rem);
+    opacity: 100;
+  }
+}
+
+.animate-notification {
+  animation: notification-enter 0.2s linear;
 }
 
 .touch-auto {
@@ -1941,12 +1937,12 @@ video {
      object-fit: scale-down;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-0 {
   padding: 0px;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-\[15px\] {
@@ -2425,40 +2421,14 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-transform {
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
 .duration-700 {
   transition-duration: 700ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.duration-100 {
-  transition-duration: 100ms;
-}
-
-.duration-\[3000ms\] {
-  transition-duration: 3000ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
 }
 
 .ease-in {
@@ -2514,16 +2484,8 @@ video {
   }
 }
 
-.open\:mb-3[open] {
-  margin-bottom: 0.75rem;
-}
-
 .open\:mt-3[open] {
   margin-top: 0.75rem;
-}
-
-.open\:flex[open] {
-  display: flex;
 }
 
 .open\:max-h-20[open] {
