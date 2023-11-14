@@ -32,9 +32,9 @@ window.onload = () =>{
         notificationSound.play()
 
         //Setando timout para remover a notificação que aparecer após 5 segundos
-            setTimeout(() => {
-                document.getElementById(notificationId).close();
-            }, 5000);
+        setTimeout(() => {
+            document.getElementById(notificationId).close();
+        }, 5000);
     });
 };
 
