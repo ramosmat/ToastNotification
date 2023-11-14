@@ -20,16 +20,19 @@ window.onload = () =>{
         dialog.id = notificationId;
 
         dialog.addEventListener('close', (ev) => {
-            ev.target.remove();
+            //Setado timeout nesta função para que o dialog fosse fechado na sextion após ser fechado, se não ia ficar um espaço em branco entre as notificações
+            setTimeout(() => {
+                ev.target.remove();
+            }, 600); //O tempo é o mesmo do duration na classe da tag dialog
         });
 
         //Inserindo no section o que está no newNotification, que é o que está na tag dialog
         notificationSection.appendChild(newNotification);
 
-        //Setando timout para remover a notificação que aparecer após 5 segundos
-            setTimeout(() => {
-                document.getElementById(notificationId).close();
-            }, 5000);
+        // //Setando timout para remover a notificação que aparecer após 5 segundos
+        //     setTimeout(() => {
+        //         document.getElementById(notificationId).close();
+        //     }, 5000);
     });
 };
 
