@@ -2441,6 +2441,10 @@ video {
   }
 }
 
+.open\:flex[open] {
+  display: flex;
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
