@@ -695,6 +695,10 @@ video {
   margin-bottom: 0px;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1941,6 +1945,10 @@ video {
   padding: 1rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .px-\[15px\] {
   padding-left: 15px;
   padding-right: 15px;
@@ -2510,6 +2518,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.open\:mt-3[open] {
+  margin-top: 0.75rem;
+}
+
 .open\:flex[open] {
   display: flex;
 }
@@ -2521,6 +2533,10 @@ video {
 .open\:translate-x-0[open] {
   --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.open\:p-4[open] {
+  padding: 1rem;
 }
 
 .open\:opacity-100[open] {
