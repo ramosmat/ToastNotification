@@ -23,7 +23,7 @@ window.onload = () =>{
             //Setado timeout nesta função para que o dialog fosse fechado na sextion após ser fechado, se não ia ficar um espaço em branco entre as notificações
             setTimeout(() => {
                 ev.target.remove();
-            }, 600); //O tempo é o mesmo do duration na classe da tag dialog
+            }, 1000); //O tempo é o mesmo do duration na classe da tag dialog
         });
 
         //Inserindo no section o que está no newNotification, que é o que está na tag dialog
